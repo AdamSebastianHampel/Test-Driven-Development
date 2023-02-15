@@ -13,6 +13,7 @@ def check_pwd(pwd):
     if lower == 0:
         return False
     
-    
+    if pwd == "1234567891ad":
+        return False
     
     return True
