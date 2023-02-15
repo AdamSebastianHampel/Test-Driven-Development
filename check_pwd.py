@@ -22,8 +22,16 @@ def check_pwd(pwd):
     if upper == 0:
         return False
 
-    if pwd == "abcdefgHIJK":
+    
+    digit = 0
+    digitStr = string.digits
+    for i in pwd:
+        if i in digitStr:
+            digit = 1
+            break
+    if digit == 0:
         return False
     
-    
+
+
     return True
