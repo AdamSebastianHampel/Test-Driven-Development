@@ -46,6 +46,10 @@ class TestCase(unittest.TestCase):
     def test11(self):
         input = "abcdef123BB"
         self.assertFalse(check_pwd(input))
+    
+    def test12(self):
+        input = "abcdTRI98"
+        self.assertFalse(check_pwd(input))
 
 if __name__ == '__main__':
     unittest.main()
