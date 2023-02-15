@@ -32,7 +32,13 @@ def check_pwd(pwd):
     if digit == 0:
         return False
     
-    if pwd == "abcdef123BB":
+    symbol = 0
+    symbolStr = "~`!@#$%^&*()_+-="
+    for i in pwd:
+        if i in symbolStr:
+            symbol = 1
+            break
+    if symbol == 0:
         return False
     
 
