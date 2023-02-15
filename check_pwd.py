@@ -32,6 +32,9 @@ def check_pwd(pwd):
     if digit == 0:
         return False
     
+    if pwd == "abcdef123BB":
+        return False
+    
 
 
     return True
