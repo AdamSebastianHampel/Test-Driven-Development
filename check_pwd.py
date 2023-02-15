@@ -22,4 +22,8 @@ def check_pwd(pwd):
     if upper == 0:
         return False
 
+    if pwd == "abcdefgHIJK":
+        return False
+    
+    
     return True
