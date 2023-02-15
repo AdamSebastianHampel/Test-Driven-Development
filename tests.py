@@ -23,6 +23,9 @@ class TestCase(unittest.TestCase):
         input = '123456789'
         self.assertFalse(check_pwd(input))
     
+    def test6(self):
+        input = '123456789GRP'
+        self.assertFalse(check_pwd(input))
 
 if __name__ == '__main__':
     unittest.main()
