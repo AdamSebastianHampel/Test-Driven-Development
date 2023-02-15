@@ -7,7 +7,9 @@ class TestCase(unittest.TestCase):
         input = ''
         self.assertFalse(check_pwd(input))
     
-   
+    def test2(self):
+        input = '1234567'
+        self.assertFalse(check_pwd(input))
 
 if __name__ == '__main__':
     unittest.main()
